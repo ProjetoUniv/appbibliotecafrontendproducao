@@ -1,0 +1,21 @@
+.buttonNo {
+  width: 150px;
+  color: white;
+  border-radius: 0;
+
+}
+.buttonYes {
+  width: 150px;
+  border-radius: 0;
+
+}
+
+span{
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.buttonsDialog{
+margin-top: 15px;
+}
+

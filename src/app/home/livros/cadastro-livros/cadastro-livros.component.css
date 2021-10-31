@@ -1,0 +1,53 @@
+i {
+  height: 50px;
+}
+
+button {
+  border-radius: 5px;
+  width: 200px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu {
+  background-position-x: 2px;
+  height: 100vh;
+}
+
+.close {
+  border-radius: 0;
+  margin-left: 10px;
+}
+
+.btnCadastro{
+  border-radius: 0 !important;
+}
+
+
+@media (max-width: 600px) and (min-width: 300px)
+{
+  .cardContainer {
+    width: 100%;
+   }
+
+   .btnCadastro{
+    width: 100%;
+  }
+
+  .close {
+    width: 100%
+  }
+
+  .formContainer{
+  width: 100%;
+    }
+
+    .image {
+     max-width: 100%;
+    }
+
+}
+

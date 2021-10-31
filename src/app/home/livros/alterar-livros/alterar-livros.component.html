@@ -1,0 +1,65 @@
+
+        <div class="container">
+          <mat-card class="mt-5 mat-elevation-z10">
+            <mat-card class="card mat-elevation-z6">
+              <mat-card-title class="title" >Alterar  Livro </mat-card-title>
+            </mat-card>
+           <form [formGroup]="bookForm" enctype="multipart/form-data">
+            <div class="row offset-md-4">
+
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-4">
+                <div class=" mt-5 d-flex justify-content-center" *ngIf="!mostrarImagem">
+                  <img [src]="imageUrl" height="200" width="200"/>
+                  </div>
+              <div class=" mt-5 d-flex justify-content-center" *ngIf="mostrarImagem">
+                <img [src]="imageUrl" height="350" width="350"/>
+                </div>
+                <div class="mt-3 d-flex justify-content-center">
+                <input type="file" name="file" id="image" formControlName="image"
+                accept="image/*" (change)="onSelectNewFile($event.target)"/>
+            </div>
+              </div>
+                <div class="col-md-8 d-flex justify-content-center">
+                      <div class="form-group mt-5">
+                        <label>ISBN</label>
+                        <input class="form-control mb-3" type="number" name="isbn" formControlName="isbn" maxlength="13" (blur)="realizaConsultaIsbn()"/>
+                        <label>Titulo do Livro</label>
+                        <input class="form-control mb-3" type="text" name="title" formControlName="title"/>
+                        <label>Nome do Autor</label>
+                        <input class="form-control mb-3" type="text" name="author" formControlName="author"/>
+                      <div class="row">
+                      <div class="col-md-6">
+                        <label>Editora</label>
+                        <input class="form-control mb-3" type="text" name="company" formControlName="company"/>
+                        </div>
+                        <div class="col-md-6">
+                        <label>Quantidade</label>
+                        <input class="form-control mb-3" type="number" name="amount" formControlName="amount" maxlength="3"/>
+                        </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                        <label>Lugar Estante</label>
+                        <input class="form-control mb-3" type="text" name="positionShelf" formControlName="positionShelf"/>
+                      </div>
+                        <div class="col-md-6">
+                        <label>Faixa Etária</label>
+                        <input class="form-control mb-3" type="text" name="ageGroup" formControlName="ageGroup"/>
+                        </div>
+                        </div>
+                        <label>Descrição do Livro</label>
+                        <br>
+                        <textarea cols="80" maxlength="300" rows="8" name="description" class="form-control" formControlName="description"></textarea>
+                        <div class="mt-3 d-flex justify-content-center">
+                          <button class="btn btn-primary" (click)="atualizar()" > ALTERAR</button>
+                          <button class="btn btn-primary"  (click)="voltar()" > FECHAR</button>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            </form>
+          </mat-card>
+        </div>
+

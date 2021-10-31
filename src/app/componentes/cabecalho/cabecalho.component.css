@@ -1,0 +1,78 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.example-button-container {
+  text-shadow: none;
+  box-shadow: none;
+  color:white;
+  background-color:  rgb(40, 40, 175);
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background-color: rgb(40, 40, 175);
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+a:hover, a:active{
+  color: lightgray;
+}
+
+.navigation-items{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.menuIcon{
+margin-left: 15px;
+}
+
+matMenu {
+margin-left: 5px;
+}
+
+.exit {
+  margin-left:500px;
+}
+
+.btnExit{
+  background-color: transparent;
+  color: white;
+}
+
+.btnSair{
+  margin-right: 10px;
+  margin-top: auto;
+}
+
+.iconExit{
+  height: 50px;
+}
+
+
+
+
+
+
+
